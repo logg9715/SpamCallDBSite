@@ -12,7 +12,7 @@
       </div>
       <hr>
       <h3 style="text-align: left;">등록된 스팸 번호</h3>
-      <p style="text-align: left;">최근 사용자들이 등록한 스팸 번호입니다. 최대 10개까지 표시합니다.</p> <br>
+      <p style="text-align: left;">최근 사용자들이 등록한 스팸 번호입니다. 한 번에 최대 10개까지 표시합니다.</p> <br>
       <table class="fl-table">
         <thead>
           <tr>
