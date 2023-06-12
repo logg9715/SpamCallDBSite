@@ -3,6 +3,9 @@ import Read from '../components/Read.vue'
 import Update from '../components/Update.vue'
 import Detail from '../components/Detail.vue'
 import NewCreate from '../components/NewCreate.vue'
+import Login from '../components/Login.vue'
+import SignUp from '../components/SignIn.vue'
+import Info from '../components/Info.vue' // 추가된 라우트 컴포넌트
 
 const routes = [
   {
@@ -24,6 +27,21 @@ const routes = [
     path: '/newCreate',
     name: 'NewCreate',
     component: NewCreate
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/signup',
+    name: 'SignUp',
+    component: SignUp
+  },
+  {
+    path: '/info', // 자기소개 페이지 경로
+    name: 'Info',
+    component: Info
   }
 ]
 
