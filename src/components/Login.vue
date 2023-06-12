@@ -11,7 +11,7 @@
                 <label for="password">비밀번호</label>
                 <input type="password" id="password" v-model="password" placeholder="비밀번호를 입력하세요" />
             </div>
-            <button class="signup-button">로그인</button>
+            <button class="signup-button" @click="login">로그인</button>
             <button class="goBackButton" @click="goBack">이전</button>
             <br>
             <!-- 회원가입 버튼 추가 -->
@@ -78,6 +78,13 @@ export default {
     },
     goBack () {
       this.$router.go(-1)
+    },
+    login () {
+      if (this.username === 'admin' && this.password === '1234') {
+        alert('로그인됨')
+      } else {
+        alert('올바르지 않습니다.')
+      }
     }
   }
 }

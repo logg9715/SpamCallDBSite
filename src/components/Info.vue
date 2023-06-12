@@ -26,6 +26,7 @@
                 <li style="text-align: left;">새 데이터를 DB에 저장할때, 현재 시간을 읽어 저장날짜 추가</li>
                 <li style="text-align: left;">테이블의 각 레코드를 누르면 상세 정보 페이지로 이동</li>
                 <li style="text-align: left;">상세정보 창에서 해당 데이터의 신고 횟수를 읽어서,<br>일정 구간마다 위험도를 3단계로 분류</li>
+                <li style="text-align: left;">로그인 창에서 id=admin pw=1234를 치고 로그인 버튼을 누르면 로그인됨.</li>
             </ul>
         </div>
     </div>
