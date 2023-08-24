@@ -115,13 +115,13 @@ export default {
   computed: {
     filteredData () {
       if (this.searchNum === '') {
-        return this.data.slice(0, 10) // 최대 5개의 행만 반환합니다.
+        return this.data.slice(0, 10) // 최대 10개의 행만 반환
       }
       const searchTerm = this.searchNum.toLowerCase()
       const filteredData = this.data.filter((item) => {
         return item.number.toLowerCase().includes(searchTerm)
       })
-      return filteredData.slice(0, 10) // 최대 5개의 행만 반환합니다.
+      return filteredData.slice(0, 10) // 최대 10개의 행만 반환
     }
   },
   methods: {
@@ -171,7 +171,7 @@ export default {
     }
   },
   mounted () {
-    // URL 해시가 #helper 인 경우 스크롤을 부드럽게 이동합니다.
+    // URL 해시가 #helper 인 경우 스크롤을 부드럽게 이동
     if (window.location.hash === '#helper') {
       const helperElement = document.querySelector('#helper')
       if (helperElement) {
